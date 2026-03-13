@@ -54,13 +54,7 @@ Le site inclut également plusieurs fonctionnalités destinées à améliorer l�
 
 ###### **Accéder au site**
 
-
-
-Le portfolio est accessible en ligne à l’adresse suivante :
-
-&nbsp;	
-
-&nbsp;	https://diagegd.github.io/portfolio/
+Le portfolio est accessible en ligne à l’adresse suivante : https://diagegd.github.io/portfolio/
 
 ## 
 
