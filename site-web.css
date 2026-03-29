@@ -92,10 +92,7 @@ header {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   font-family: Ubuntu, sans-serif;
   background: linear-gradient(150deg, var(--txt), var(--accent));
   -webkit-background-clip: text;
