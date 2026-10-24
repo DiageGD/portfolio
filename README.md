@@ -11,7 +11,7 @@ Ce dépôt contient le code source de mon portfolio personnel. Ce site web a pou
 
 ---
 
-## 🛠️ Stack Technique & Fonctionnalités
+## Stack Technique & Fonctionnalités
 
 Le site a été conçu avec une approche moderne, épurée et performante, sans framework lourd :
 
