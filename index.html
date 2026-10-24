@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portfolio de Tiago Da Silva, étudiant en mathématiques et informatique présentant ses compétences et projets en programmation."
+    />
+
+    <title>Tiago Da Silva - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigation Fixe -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contacts">Contacter</a>
+      </div>
+    </nav>
+
+    <!-- En-tête / Hero -->
+    <header class="hero-header">
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Tiago Da Silva</h1>
+          <br />
+          <h2>Étudiant en BTS SIO (1ère année)</h2>
+          <p class="header-tagline">
+            Passionné d'informatique, d'algorithmique et de développement.
+          </p>
+        </div>
+
+        <div class="header-photo-wrapper">
+          <img
+            src="assets/photo.png"
+            alt="Photo de Tiago Da Silva"
+            class="photo"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- À propos -->
+    <section id="about" class="about-section">
+      <h2>À propos</h2>
+
+      <div class="about-container">
+        <div class="about-text">
+          <p class="about-lead">
+            Actuellement en première année de BTS Services Informatiques aux
+            Organisations (SIO).
+          </p>
+
+          <p>
+            Passionné d'informatique depuis le collège, j'ai forgé mes bases en
+            explorant le code sur des supports atypiques : des calculatrices
+            Casio et NumWorks jusqu'aux iPads du lycée, avant de basculer sur un
+            véritable environnement de développement.
+          </p>
+
+          <p>
+            Cette approche m'a habitué aux contraintes matérielles (mémoire,
+            processeur, stockage), me poussant naturellement à chercher un code
+            structuré, lisible et optimisé. Aujourd'hui, je mets cette curiosité
+            au service de projets plus ambitieux.
+          </p>
+
+          <div class="about-action">
+            <a
+              href="assets/CV_Tiago_Da_Silva.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="pdf-btn"
+            >
+              📑 Voir mon CV (PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- Fil d'Ariane / Repères de parcours (style éditorial simple) -->
+        <div class="about-highlights">
+          <div class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <strong>BTS SIO (1ère année)</strong>
+            <p>Développement, POO & Algorithmique</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">L1</span>
+            <strong>Informatique</strong>
+            <p>Langage C &amp; Notions de WebAssembly (Wasm)</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Autodidacte</span>
+            <strong>Scolaire & Contraint</strong>
+            <p>Scripts NumWorks & MicroPython</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <hr />
+    <hr />
+
+    <!-- Compétences -->
+    <section id="skills" class="skills-section">
+      <h1>Compétences &amp; Outils</h1>
+
+      <div class="skills-grid">
+        <!-- Carte 1 : Outils -->
+        <article class="skill-card">
+          <h3>Logiciels &amp; Environnements</h3>
+
+          <p>
+            Ensemble d'outils utilisés pour le développement, la conception
+            visuelle et la communication :
+          </p>
+
+          <ul>
+            <li>
+              <strong>Canva :</strong>
+              Création de supports visuels, d'interfaces et de visuels de
+              communication.
+            </li>
+
+            <li>
+              <strong>Suite Office &amp; LibreOffice :</strong>
+              Usage quotidien (Word, Excel, PowerPoint, Teams) en environnement
+              professionnel.
+            </li>
+
+            <li>
+              <strong>VS Code :</strong>
+              IDE principal, optimisé via de nombreuses extensions pour un
+              workflow fluide.
+            </li>
+
+            <li>
+              <strong>Unity &amp; C# :</strong>
+              Notions de programmation orientée objet appliquées au
+              développement de jeux en solo.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 2 : Python -->
+        <article class="skill-card">
+          <h3>Python</h3>
+
+          <ul>
+            <li>
+              <strong>Structures de contrôle :</strong>
+              Maîtrise des conditions (if/elif/else) et des boucles (for/while).
+            </li>
+
+            <li>
+              <strong>Fonctions &amp; Algorithmique :</strong>
+              Conception de fonctions modularisées, passages de paramètres et
+              récursivité.
+            </li>
+
+            <li>
+              <strong>Programmation Orientée Objet (POO) :</strong>
+              Création et manipulation de classes, méthodes et attributs.
+            </li>
+
+            <li>
+              <strong>Gestion des erreurs &amp; Robustesse :</strong>
+              Traitement des exceptions (try/except) pour garantir la continuité
+              d'exécution des programmes.
+            </li>
+
+            <li>
+              <strong>Optimisation :</strong>
+              Écriture de code propre sous contraintes de mémoire et
+              d'environnement.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 3 : HTML -->
+        <article class="skill-card">
+          <h3>HTML5</h3>
+
+          <ul>
+            <li>
+              <strong>Sémantique &amp; Structure :</strong>
+              Balisage propre (header, section, article, nav, footer) et
+              hiérarchie des titres (h1-h6).
+            </li>
+
+            <li>
+              <strong>Formulaires &amp; Interactivité :</strong>
+              Création de formulaires complets, champs de saisie, boutons et
+              tableaux de données.
+            </li>
+
+            <li>
+              <strong>Listes &amp; Médias :</strong>
+              Structuration de contenus complexes (listes ordonnées / non
+              ordonnées, intégration d'images et vidéos).
+            </li>
+
+            <li>
+              <strong>Bases du balisage :</strong>
+              Maîtrise des attributs natifs et des règles de structuration W3C.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 4 : CSS -->
+        <article class="skill-card">
+          <h3>CSS3 &amp; Layout</h3>
+
+          <ul>
+            <li>
+              <strong>Ciblage &amp; Sélecteurs :</strong>
+              Utilisation précise des ID, classes, balises et pseudo-classes
+              (:nth-child, :hover, etc.).
+            </li>
+
+            <li>
+              <strong>Mise en page moderne :</strong>
+              Structuration d'interfaces réactives avec Flexbox, CSS Grid et
+              colonnes (Masonry).
+            </li>
+
+            <li>
+              <strong>Design &amp; Stylisation :</strong>
+              Gestion des typographies, palettes de couleurs, ombres, bordures
+              et espacements (Box Model).
+            </li>
+
+            <li>
+              <strong>Workflow :</strong>
+              Exploitation efficace de l'autocomplétion et de la documentation
+              pour l'intégration de propriétés avancées.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 5 : JavaScript -->
+        <article class="skill-card">
+          <h3>JavaScript (Vanilla)</h3>
+
+          <ul>
+            <li>
+              <strong>Manipulation du DOM :</strong>
+              Dynamisation des pages web (sélection d'éléments, modification de
+              contenu via textContent, gestion des styles).
+            </li>
+
+            <li>
+              <strong>Logique &amp; Événements :</strong>
+              Attachement d'écouteurs d'événements (Event Listeners) et
+              exécution de fonctions ciblées.
+            </li>
+
+            <li>
+              <strong>Structures de contrôle :</strong>
+              Conditions, boucles et gestion des états de l'application.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 6 : SQL -->
+        <article class="skill-card">
+          <h3>Bases de données (SQL)</h3>
+
+          <ul>
+            <li>Conception et requêtage de bases de données relationnelles</li>
+
+            <li>Maîtrise du LMD (SELECT, INSERT, UPDATE, DELETE)</li>
+
+            <li>Notions de LDD (CREATE, DROP) et respect des normes</li>
+          </ul>
+        </article>
+
+        <!-- Carte 7 : Java -->
+        <article class="skill-card">
+          <h3>Java</h3>
+
+          <ul>
+            <li>
+              <strong>Syntaxes &amp; Fondations :</strong>
+              Maîtrise des structures de contrôle (boucles
+              <code>for</code>/<code>while</code>, conditions
+              <code>if</code>/<code>switch</code>) et typage statique.
+            </li>
+
+            <li>
+              <strong>Programmation Orientée Objet :</strong>
+              Déclaration de classes publiques/privées, instanciation d'objets
+              et méthodes.
+            </li>
+
+            <li>
+              <strong>Architecture modulaire :</strong>
+              Structuration du code en fonctions et méthodes réutilisables.
+            </li>
+
+            <li>
+              <strong>Montée en compétences :</strong>
+              Transposition active des principes de POO et d'algorithmique déjà
+              acquis en Python.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 8 : C -->
+        <article class="skill-card">
+          <h3>Langage C</h3>
+
+          <ul>
+            <li>
+              <strong>Logique &amp; Algorithmique bas niveau :</strong>
+              Manipulation de structures de données complexes (tableaux 2D,
+              matrices, énumérations).
+            </li>
+
+            <li>
+              <strong>Gestion de la mémoire &amp; Pointeurs :</strong>
+              Utilisation des pointeurs et passages d'adresses (ex. : fonctions
+              de permutation <code>swap</code>).
+            </li>
+
+            <li>
+              <strong>Programmation modulaire :</strong>
+              Découpage rigoureux d'un projet en fonctions logiques (affichage,
+              logique de jeu, gestion des entrées).
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 9 : Algorithmique -->
+        <article class="skill-card">
+          <h3>Algorithmique &amp; Logique</h3>
+
+          <ul>
+            <li>
+              <strong>Pseudo-code &amp; Logique :</strong>
+              Maîtrise des structures algorithmiques fondamentales (conditions,
+              boucles, structures de données) formalisées en texte structuré.
+            </li>
+
+            <li>
+              <strong>Programmation par blocs :</strong>
+              Conception d'architectures logiques complexes sur
+              <strong>Scratch</strong> et <strong>TurboWarp</strong>.
+            </li>
+
+            <li>
+              <strong>Optimisation des performances :</strong>
+              Résolution de problèmes et structuration de code propre sans
+              latence ni redondance.
+            </li>
+
+            <li>
+              <strong>Transposition :</strong>
+              Capacité à traduire instantanément une logique algorithmique
+              textuelle en code exécutable (Python, Java, etc.).
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte 10 : Architecture et assembleur -->
+        <article class="skill-card">
+          <h3>Architecture &amp; Assembleur (TTC &amp; HRM)</h3>
+
+          <ul>
+            <li>
+              <strong>Bases matérielles &amp; CPU :</strong>
+              Compréhension fine du cycle processeur (fetch, décodage,
+              exécution), du rôle du compteur ordinal (IP) et des registres.
+            </li>
+
+            <li>
+              <strong>Assembleur &amp; Bas niveau :</strong>
+              Écriture de programmes et de routines en assembleur (Human
+              Resource Machine et The Tiny Computer).
+            </li>
+
+            <li>
+              <strong>Gestion système :</strong>
+              Manipulation de la pile (SP/BP), des interruptions
+              logicielles/matérielles et des sauts conditionnels.
+            </li>
+
+            <li>
+              <strong>Optimisation &amp; Mémoire :</strong>
+              Notions d'architecture des caches, de gestion des flux et de
+              traduction de code compilé.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <hr />
+    <hr />
+
+    <!-- Projets -->
+    <section id="projects">
+      <h1>Projets</h1>
+
+      <div class="projects-bento">
+        <!-- Carte 1 : NumWorks -->
+        <article class="project-card featured">
+          <!-- Colonne gauche : contenu textuel -->
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-badge">
+                <strong> <u>Projet Phare</u> • <u>Niche Expertise</u> </strong>
+              </span>
+
+              <h2><b>NumWorks Engine &amp; Scripts Python</b></h2>
+            </div>
+
+            <p class="project-lead">
+              Exploration et poussée des limites matérielles sur environnement
+              fortement contraint (calculatrice NumWorks, 45 Ko de stockage,
+              modules limités, ...).
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>
+                  <strong>Moteur RPG &amp; Sprites Hexadécimaux :</strong>
+                  Conception d'un moteur de jeu avec rendu matriciel (160x120
+                  étiré sur 320x240). Encodage des sprites et cartes en chaînes
+                  hexadécimales compactes pour économiser le SSD.
+                </li>
+
+                <li>
+                  <strong>IDE Multi-Langages Embarqué :</strong>
+                  Prototypes d'éditeurs/interpréteurs compacts (HTML, CSS, JS,
+                  SQL) adaptés aux contraintes d'affichage.
+                </li>
+
+                <li>
+                  <strong>Optimisation MicroPython :</strong>
+                  Gestion ultra-strict de la mémoire RAM, bit-packing et
+                  exécution fluide.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tag">Python / MicroPython</span>
+              <span class="tag">Encodage Hexadécimale</span>
+              <span class="tag">Moteur de jeu</span>
+              <span class="tag">Optimisation SSD</span>
+              <span class="tag">Recherche informatique</span>
+              <span class="tag">Spécialisation Game Design</span>
+            </div>
+
+            <div class="project-footer">
+              <a
+                class="preview-btn"
+                href="https://my.numworks.com/python/diage-77"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Explorer mes scripts NumWorks
+              </a>
+            </div>
+          </div>
+
+          <!-- Colonne droite : carrousel d'images -->
+          <div class="project-media">
+            <div class="carousel-container">
+              <div class="carousel-slide active">
+                <img
+                  src="assets/solitaireNumWorks.png"
+                  alt="Interface du jeu de Solitaire développé en MicroPython sur NumWorks"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="assets/htmlEditorNumWorks.png"
+                  alt="Prototype d'éditeur HTML embarqué sur la calculatrice NumWorks"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="assets/sqlEditorNumWorks.png"
+                  alt="Interface de l'éditeur et interpréteur SQL sur NumWorks"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="assets/imageReaderNumWorks.png"
+                  alt="Décodeur d'images en hexadécimal et affichage en nuances de gris sur NumWorks"
+                />
+              </div>
+
+              <div class="carousel-slide">
+                <img
+                  src="assets/calculatorNumWorks.jpg"
+                  alt="Image de présentation de la calculatrice NumWorks"
+                />
+              </div>
+            </div>
+
+            <!-- Masque de fondu vers la gauche -->
+            <div class="media-overlay-shade"></div>
+          </div>
+        </article>
+
+        <!-- Carte 2 : F1 x Skateboarding -->
+        <article class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-badge">
+                <u>Projet Web</u> • <u>Design &amp; UI</u>
+              </span>
+
+              <h2><b>F1 x Skateboarding</b></h2>
+            </div>
+
+            <p class="project-lead">
+              Un site web expérimental et immersif fusionnant l'univers de la
+              Formule 1 et la culture skate, axé sur l'intégration visuelle et
+              l'interactivité.
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>
+                  <strong>Immersion visuelle :</strong>
+                  Fusion audacieuse de deux univers contrastés à travers un
+                  design soigné et des animations fluides.
+                </li>
+
+                <li>
+                  <strong>Gestion des médias :</strong>
+                  Galeries dynamiques optimisées pour la mise en valeur des
+                  visuels et des produits.
+                </li>
+
+                <li>
+                  <strong>Responsive Design :</strong>
+                  Interface fluide et adaptée à toutes les tailles d'écran
+                  (mobile et desktop).
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Grid &amp; Flexbox</span>
+            </div>
+
+            <div class="project-footer">
+              <a
+                class="code-btn"
+                href="https://github.com/DiageGD/f1-skate-shop-2025"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Code GitHub
+              </a>
+
+              <a
+                class="preview-btn"
+                href="https://diagegd.github.io/f1-skate-shop-2025/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Voir le site
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 3 : Modèle LSTM et attention -->
+        <article class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-badge">
+                <u>Projet Deep Learning</u> • <u>PyTorch &amp; CUDA</u>
+              </span>
+
+              <h2><b>Modèle LSTM &amp; Attention (NLP)</b></h2>
+            </div>
+
+            <p class="project-lead">
+              Entraînement de zéro d'un réseau de neurones récurrents (LSTM)
+              avec mécanisme d'attention sur 52 heures, alimenté par une
+              sélection de grands classiques de la littérature.
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>
+                  <strong>Architecture &amp; GPU :</strong>
+                  Conception d'un modèle multicouche avec attention
+                  personnalisée et optimisation matérielle (CUDA,
+                  <code>torch.amp</code>).
+                </li>
+
+                <li>
+                  <strong>Robustesse &amp; Checkpoints :</strong>
+                  Pipeline d'ingestion de corpus massifs et système de
+                  sauvegarde automatisé pour sécuriser les longs entraînements.
+                </li>
+
+                <li>
+                  <strong>Leçon de l'expérience :</strong>
+                  Confrontation directe aux limites des LSTM sur du texte brut
+                  (ce qui s'est soldé par la génération obstinée d'un résumé de
+                  Socrate en boucle après 52h d'entraînement).
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tag">PyTorch</span>
+              <span class="tag">CUDA / Précision</span>
+              <span class="tag">LSTM + Attention</span>
+              <span class="tag">Python</span>
+              <span class="tag">Optimisation &amp; entraînement GPU</span>
+              <span class="tag">Prédiction au caractère</span>
+            </div>
+
+            <div class="project-footer">
+              <a
+                class="code-btn"
+                href="https://github.com/DiageGD/AI.git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Code GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 4 : Jeu du 2048 -->
+        <article class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-badge">
+                <u>Projet C</u> • <u>Algorithmique &amp; Bas Niveau</u>
+              </span>
+
+              <h2><b>Jeu du 2048 (Langage C)</b></h2>
+            </div>
+
+            <p class="project-lead">
+              Développement complet du célèbre jeu de réflexion 2048 en langage
+              C, axé sur la rigueur algorithmique, la manipulation de matrices
+              et la gestion des structures de données.
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>
+                  <strong>Matrices &amp; Grille 2D :</strong>
+                  Implémentation et gestion rigoureuse d'une grille dynamique en
+                  mémoire pour le placement et l'état des tuiles.
+                </li>
+
+                <li>
+                  <strong>Algorithme de fusion :</strong>
+                  Conception de la logique de déplacement, d'addition des tuiles
+                  adjacentes et de vérification des conditions de fin de partie.
+                </li>
+
+                <li>
+                  <strong>Rigueur bas niveau :</strong>
+                  Application des bonnes pratiques de découpage modulaire et de
+                  manipulation des pointeurs en C.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tag">Langage C</span>
+              <span class="tag">Algorithmique</span>
+              <span class="tag">Matrices 2D</span>
+              <span class="tag">Logique de Jeu</span>
+            </div>
+
+            <div class="project-footer">
+              <a
+                class="code-btn"
+                href="https://github.com/DiageGD/2048"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Code GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 5 : CV et portfolio -->
+        <article class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-badge">
+                <u>Projet Web</u> • <u>UI &amp; Responsive Design</u>
+              </span>
+
+              <h2><b>CV &amp; Portfolio Personnel</b></h2>
+            </div>
+
+            <p class="project-lead">
+              Transformation d'un CV PDF statique en une interface web
+              interactive, et conception de ce portfolio complet pour
+              centraliser mon parcours, mes compétences et mes réalisations.
+            </p>
+
+            <div class="project-highlights">
+              <ul>
+                <li>
+                  <strong>CV Interactif :</strong>
+                  Refonte numérique d'un CV statique en une page web moderne,
+                  responsive et fluide adaptée à tous les types d'écrans.
+                </li>
+
+                <li>
+                  <strong>Architecture Bento Grid :</strong>
+                  Conception de ce portfolio en HTML/CSS pur, intégrant un thème
+                  clair/sombre automatique, des animations légères et des
+                  composants modulaires.
+                </li>
+
+                <li>
+                  <strong>Expérience Utilisateur :</strong>
+                  Navigation fluide, structure sémantique rigoureuse et souci du
+                  détail typographique.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript Vanilla</span>
+              <span class="tag">Design Dynamique</span>
+              <span class="tag">Thème clair/sombre</span>
+              <span class="tag">Carroussel d'images</span>
+            </div>
+
+            <div class="project-footer">
+              <a
+                class="code-btn"
+                href="https://github.com/DiageGD/cv-site.git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Code du CV
+              </a>
+
+              <a
+                class="preview-btn"
+                href="https://diagegd.github.io/cv-site/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Voir la page CV
+              </a>
+
+              <a
+                class="code-btn"
+                href="https://github.com/DiageGD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                → Code Portfolio
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <hr />
+    <hr />
+
+    <!-- Contacts -->
+    <section id="contacts" class="contacts-section">
+      <h1>Contacts</h1>
+      <p class="contact-lead">
+        Si vous souhaitez me contacter quelle qu'en soit la raison, vous pouvez
+        me joindre via :
+      </p>
+      <article class="contact-card">
+        <strong>Mon adresse mail :</strong>
+        <a href="mailto:dasilvatiago77310@gmail.com">
+          dasilvatiago77310@gmail.com
+        </a>
+      </article>
+
+      <article class="contact-card">
+        <strong>Téléphone (WhatsApp) :</strong>
+        <a href="tel:+33781996299">07 81 99 62 99</a>
+      </article>
+
+      <article class="contact-card">
+        <strong>GitHub :</strong>
+        <a
+          href="https://github.com/DiageGD"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Voir mes projets GitHub
+        </a>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>© 2026 Tiago Da Silva • Tous droits réservés</p>
+        <a href="index.html" class="back-to-top">↑ Remonter</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,666 @@
+/* Variables et thème */
+/* Couleurs de bases (mode clair) */
+:root {
+  --bg: #d4d4d4;
+  --txt: #000000;
+  --accent: #ff0000;
+  --cardBorders: #b4b4b4;
+  --cardFill: #f4f4f4;
+  --cardText: #1a1a1a;
+}
+
+/* Couleurs de bases (mode sombre) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #2e2e2e;
+    --txt: #ffffff;
+    --accent: #00c3ff;
+    --cardBorders: #4a4a4a;
+    --cardFill: #1f1f1f;
+    --cardText: #fafafa;
+  }
+}
+
+/* Attribution des deux thèmes définis */
+html {
+  color-scheme: light dark;
+}
+
+/* Typographie */
+/* Attribution de la police de caractères pour le corps du texte */
+body,
+p,
+li,
+span,
+a {
+  font-family: "Inter", sans-serif;
+}
+
+/* Attribution de la police de caractères pour les titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Text", serif;
+}
+
+/* Belle mise en page des grands titres */
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+/* Nav sticky (il est coincé en haut) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: var(--cardFill);
+  border-bottom: 1px solid var(--cardBorders);
+  backdrop-filter: blur(10px); /* effet de flou élégant sous le menu */
+  opacity: 0.95;
+
+  padding: 0.8rem 1rem;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Définition des paramètres pour le conteneur de navigation */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Définition des paramètres pour les liens de navigation */
+.navbar a {
+  color: var(--txt);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+/* Définition des paramètres pour les liens de navigation au survol */
+.navbar a:hover {
+  color: var(--accent);
+}
+
+/* Header de la page (nom, prénom, photo et short description) */
+/* Définition des paramètres pour le conteneur du header */
+.hero-header {
+  max-width: 1200px;
+  margin: 3rem auto 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Définition des paramètres pour le contenu du header */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Définition des paramètres pour le titre du header */
+.header-text h1 {
+  font-size: 2.8rem;
+  margin: 0 0 0.4rem 0;
+  color: var(--txt);
+  line-height: 1.1;
+}
+
+/* Définition des paramètres pour le sous-titre du header */
+.header-text h2 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 0.8rem 0;
+}
+
+/* Définition des paramètres pour la short description du header */
+.header-tagline {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Photo de profil avec bordure subtile et ombre */
+.photo {
+  width: 130px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid var(--cardBorders);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Définition des paramètres pour la photo de profil au survol */
+.photo:hover {
+  transform: scale(1.03);
+  border-color: var(--accent);
+}
+
+/* Responsive Mobile pour le Header */
+@media (max-width: 650px) {
+  .header-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .nav-container {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .header-text h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* À propos */
+.about-section {
+  max-width: 1200px;
+  margin: 3rem auto 4rem auto;
+  padding: 0 1rem;
+}
+
+/* Paramètres pour le conteneur de la section À propos */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+/* Paramètres pour le conteneur de la section À propos sur les écrans plus larges */
+@media (min-width: 850px) {
+  .about-container {
+    grid-template-columns: 1.4fr 0.8fr;
+    align-items: start;
+  }
+}
+
+/* Paramètres pour le texte de présentation */
+.about-lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--txt);
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+/* Paramètres pour le texte de la section À propos */
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--txt);
+  opacity: 0.9;
+}
+
+/* Paramètres pour le bouton d'action de la section À propos */
+.about-action {
+  margin-top: 2rem;
+}
+
+/* Timeline verticale épurée à droite */
+.about-highlights {
+  border-left: 2px solid var(--cardBorders);
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Paramètres pour les éléments de la timeline verticale */
+.timeline-item {
+  position: relative;
+}
+
+/* Paramètres pour les points de la timeline verticale */
+.timeline-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+/* Paramètres pour les titres des éléments de la timeline verticale */
+.timeline-item strong {
+  display: block;
+  color: var(--txt);
+  font-size: 1rem;
+}
+
+/* Paramètres pour les descriptions des éléments de la timeline verticale */
+.timeline-item p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.7;
+}
+
+/* Compétences */
+/* Grille de compétences (espacement et taille) */
+.skills-grid {
+  column-width: 300px;
+  column-gap: 1.5rem;
+}
+
+/* Ensemble de paramètres utiles pour les cartes de la section "Compétences" */
+.skill-card {
+  /* Évite de couper une carte entre deux colonnes */
+  break-inside: avoid;
+
+  /* Définition des espacements (intérieur et extérieur) */
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+
+  /* Définition de l'apparence des cartes */
+  background-color: var(--cardFill);
+  border: 1px solid var(--cardBorders);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* Définition des paramètres de transition */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Définition des paramètres pour les listes à l'intérieur des cartes de compétences et des projets */
+.skill-card ul,
+.project-highlights ul {
+  padding-left: 1.25rem;
+}
+
+/* Définition des paramètres pour les éléments de liste à l'intérieur des cartes de compétences et des projets */
+.skill-card li,
+.project-highlights li {
+  margin-bottom: 0.75rem;
+}
+
+/* Suppression de la marge inférieure pour le dernier élément de liste à l'intérieur des cartes de compétences et des projets */
+.skill-card li:last-child,
+.project-highlights li:last-child {
+  margin-bottom: 0;
+}
+
+/* Définition des paramètres pour les cartes de compétences au survol */
+.skill-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent);
+}
+
+/* Projets */
+/* Grille de projets (espacement et taille) */
+.projects-bento {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ensemble de paramètres utiles pour les cartes de la section "Projets" */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1.5rem;
+
+  background-color: var(--cardFill);
+  border: 1px solid var(--cardBorders);
+  border-radius: 12px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Définition des paramètres pour les cartes de projets au survol */
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+/* Carte principale Bento */
+.project-card.featured {
+  /* Par défaut, la carte occupe une seule colonne */
+  grid-column: span 1;
+
+  /* La carte principale est affichée en grille pour permettre une disposition flexible de ses enfants */
+  display: grid;
+  grid-template-columns: 1fr;
+
+  /* Définition des paramètres de positionnement et de débordement pour permettre l'affichage correct des médias */
+  position: relative;
+  overflow: hidden;
+
+  /* Définition de l'apparence de la carte principale */
+  background-color: var(--cardFill);
+  border: 1px solid var(--cardBorders);
+  border-radius: 16px;
+}
+
+/* Contenu des projets */
+/* Ensemble de paramètres utiles pour le contenu des projets */
+.project-content {
+  /* La carte principale est affichée en flexbox pour permettre une disposition flexible de ses enfants */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Définition des paramètres de positionnement et de débordement pour permettre l'affichage correct des médias */
+  padding: 2rem;
+
+  /* Définition des paramètres de positionnement pour permettre l'affichage correct des médias */
+  position: relative;
+  z-index: 2;
+}
+
+/* Définition des paramètres pour les en-têtes, les leads et les pieds de page des projets */
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.project-lead {
+  margin-bottom: 1rem;
+}
+
+.project-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+/* Médias et carrousel */
+/* Définition des paramètres de positionnement et de débordement pour permettre l'affichage correct des médias */
+.project-media {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+
+  overflow: hidden;
+}
+
+/* Définition des paramètres pour le conteneur du carrousel */
+.carousel-container {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+/* Définition des paramètres pour les diapositives du carrousel */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Définition des paramètres pour la diapositive active du carrousel */
+.carousel-slide.active {
+  opacity: 1;
+}
+
+/* Définition des paramètres pour les images à l'intérieur des diapositives du carrousel */
+.carousel-slide img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Définition des paramètres pour l'ombre de superposition des médias */
+.media-overlay-shade {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to right,
+    var(--cardFill) 0%,
+    rgba(24, 24, 27, 0.4) 40%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+}
+
+/* Technologies des projets */
+/* Ensemble de paramètres utiles pour la liste des technologies utilisées dans les projets */
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-top: 1.2rem;
+}
+
+/* Définition des paramètres pour les étiquettes des technologies utilisées dans les projets */
+.tag {
+  padding: 0.3rem 0.7rem;
+
+  background-color: rgba(0, 195, 255, 0.1);
+  border: 1px solid var(--cardBorders);
+  border-radius: 6px;
+
+  color: var(--txt);
+
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Définition des paramètres pour les étiquettes des technologies utilisées dans les projets au survol */
+.tag:hover {
+  background-color: rgba(0, 255, 195, 0.1);
+}
+
+/* Boutons des projets */
+/* Ensemble de paramètres utiles pour les boutons des projets */
+.preview-btn,
+.code-btn {
+  display: inline-block;
+
+  padding: 10px 14px;
+  margin-top: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.preview-btn {
+  background-color: #4571ff;
+}
+
+.code-btn {
+  background-color: #1e932c;
+}
+
+.preview-btn:hover,
+.code-btn:hover {
+  opacity: 0.8;
+}
+
+/* Bouton PDF */
+/* Ensemble de paramètres utiles pour le bouton PDF */
+.pdf-btn {
+  display: inline-block;
+
+  margin-top: 15px;
+  padding: 8px 15px;
+
+  background-color: var(--txt);
+  color: var(--bg);
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  transition: opacity 0.3s ease;
+}
+
+.pdf-btn:hover {
+  opacity: 0.8;
+}
+
+/* Mise en page responsive */
+/* Définition des paramètres pour les grilles de projets et les cartes principales en fonction de la largeur de l'écran */
+@media (min-width: 900px) {
+  .projects-bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card.featured {
+    grid-column: span 2;
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+/* Définition des paramètres pour les grilles de projets et les cartes principales en fonction de la largeur de l'écran */
+@media (max-width: 850px) {
+  .project-card.featured {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+
+  .media-overlay-shade {
+    background: linear-gradient(
+      to bottom,
+      var(--cardFill) 0%,
+      transparent 100%
+    );
+  }
+}
+
+/* Contacts */
+/* Définition des paramètres pour le conteneur de la section Contacts */
+.contacts-section {
+  max-width: 1200px;
+  margin: 4rem auto 2rem auto;
+}
+
+/* Définition des paramètres pour les cartes de contact */
+.contact-card {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+
+  background-color: var(--cardFill);
+  border: 1px solid var(--cardBorders);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Définition des paramètres pour les cartes de contact au survol */
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent);
+}
+
+/* Définition des paramètres pour les titres des cartes de contact */
+.contact-lead {
+  margin-bottom: 1.2rem;
+  color: var(--txt);
+}
+
+/* Footer */
+/* Définition des paramètres pour le footer du site */
+.site-footer {
+  border-top: 1px solid var(--cardBorders);
+  background-color: var(--cardFill);
+  padding: 2rem 1rem;
+  margin-top: 5rem;
+}
+
+/* Définition des paramètres pour le conteneur du footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Définition des paramètres pour le texte du footer */
+.footer-container p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--txt);
+  opacity: 0.75;
+}
+
+/* Définition des paramètres pour l'ancre "Remonter" du footer */
+.back-to-top {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+/* Définition des paramètres pour l'ancre "Remonter" du footer au survol */
+.back-to-top:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Ajustement mobile pour le footer */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Accessibilité : animations */
+/* Réduction des animations pour les utilisateurs qui ont activé l'option "Réduire les animations" dans leur système d'exploitation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
