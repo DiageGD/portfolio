@@ -1,73 +1,47 @@
-# Portfolio – Tiago Da Silva
+# Portfolio Personnel — Tiago Da Silva
 
+> **Portfolio interactif au design Bento Grid**  
+> *Développé pour présenter mon parcours, mes compétences et mes projets dans le cadre de ma recherche de stage (BTS SIO).*
 
+---
 
-Ce dépôt contient le code source de mon portfolio personnel.
+## Présentation
 
+Ce dépôt contient le code source de mon portfolio personnel. Ce site web a pour objectif de centraliser mon parcours, de mettre en valeur mes réalisations techniques (du bas niveau avec le langage C et NumWorks jusqu'au développement web et au Deep Learning) et de servir de point d'entrée vers l'ensemble de mes projets sur GitHub.
 
+---
 
-Ce site web a pour objectif de présenter mon parcours, mes compétences en programmation ainsi que mes différents projets personnels. Il constitue également un point d’entrée vers l’ensemble de mes autres projets disponibles sur mon GitHub.
+## 🛠️ Stack Technique & Fonctionnalités
 
-## 
+Le site a été conçu avec une approche moderne, épurée et performante, sans framework lourd :
 
-###### **Aperçu du site**
+- **HTML5 & CSS3 :** Structure sémantique rigoureuse et mise en page moderne basée sur une **Bento Grid** responsive.
+- **JavaScript Vanilla :** Gestion du carrousel d'images dynamique pour les projets (ex: NumWorks).
+- **Design & Expérience Utilisateur :**
+  - Thème clair / sombre automatique basé sur les préférences du système (`color-scheme`).
+  - Navigation fixe intuitive (*sticky navbar*).
+  - Typographie soignée combinant *Crimson Text* et *Inter*.
+  - Animations légères et transitions fluides au survol.
 
+---
 
+## Structure du Site
 
-Le portfolio est organisé en plusieurs sections :
+- **À propos :** Présentation de mon parcours, de mes débuts autodidactes sur supports contraints (calculatrices, iPads) à ma formation actuelle, illustrée par une timeline épurée.
+- **Compétences :** Aperçu honnête et structuré de mes compétences techniques (Python, C, HTML/CSS, SQL, Java, etc.) et des outils utilisés (VS Code, Canva, etc.).
+- **Projets :** Vitrine de mes réalisations principales (Moteur NumWorks, Site F1 x Skate, Modèle LSTM/CUDA, Jeu du 2048, et ce portfolio).
+- **Contacts :** Moyens directs de me joindre (e-mail, WhatsApp, GitHub).
 
+---
 
+## Accéder au site
 
-* À propos : une présentation rapide de mon parcours et de mon intérêt pour l’informatique.
-* Compétences : une liste des langages de programmation et des outils que j’utilise régulièrement.
-* Projets : une présentation de plusieurs projets que j’ai réalisés, avec des liens vers leur code source ou leur version en ligne.
-* Contacts : les différents moyens de me contacter ainsi qu’un lien vers mon profil GitHub.
+Le portfolio est consultable en ligne à l'adresse suivante :  
+[https://diagegd.github.io/portfolio/](https://diagegd.github.io/portfolio/)
 
-## 
+---
 
-###### **Technologies utilisées**
+## Auteur
 
-
-
-Ce site web a été développé en utilisant les technologies suivantes :
-
-
-
-* HTML5
-* CSS3
-
-
-
-
-
-Le site inclut également plusieurs fonctionnalités destinées à améliorer l’expérience utilisateur :
-
-
-
-* Une structure HTML sémantique claire ;
-* Un thème clair / sombre automatique basé sur les préférences du système ;
-* Une navigation fluide entre les différentes sections ;
-* Des animations légères réalisées en CSS ;
-* Une interface simple et lisible.
-
-## 
-
-###### **Accéder au site**
-
-Le portfolio est accessible en ligne à l’adresse suivante : https://diagegd.github.io/portfolio/
-
-## 
-
-###### **Auteur**
-
-
-
-**Tiago Da Silva**
-
-
-
-Étudiant en Mathématiques–Informatique et passionné par la programmation. Je développe régulièrement des projets personnels afin d’améliorer mes compétences et d’explorer différents domaines de l’informatique.
-
-
-
-GitHub : https://github.com/DiageGD
+**Tiago Da Silva (moi!)** — *Étudiant en BTS SIO (1ère année)*  
+- GitHub : [@DiageGD](https://github.com/DiageGD)
